@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      NüFeel PreAlpha
+    </title>
+    <!-- Playful fonts from original file -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief&amp;family=Kalam:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <style>
+      :root {
+            /* Requested Background: 31R, 41G, 55B */
+            --bg-color: rgb(31, 41, 55);
+            /* Requested Text Color: 207R, 250G, 254B */
+            --text-color: rgb(207, 250, 254);
+            --font-main: &#39;Comic Relief&#39;, &#39;Kalam&#39;, &#39;Comic Sans MS&#39;, cursive;
+        }
+
+        * {
+            box-sizing: border-box;
+            transition: all 0.25s ease;
+            text-shadow: none !important;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            margin-top: 15px;
+            line-height: 1.5;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1100px;
+        }
+
+        .game-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: transparent;
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 30px 20px;
+            border-radius: 12px;
+            /* Thin white outline */
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .game-card:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 1);
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(207, 250, 254, 0.2);
+        }
+
+        .game-card:active {
+            transform: translateY(-2px);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 60px 0 20px 0;
+            opacity: 0.5;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            .game-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Welcome to NüFeel!
+      </h1>
+      <div class="subtitle">
+        This rn is just feeline expo, but its "NüFeel"! Eventually, many more games will be added, I am planning on adding a music library, and maybe a proxy. But for now, don't expect much. --- Cuinja, main dev
+      </div>
+    </header>
+    <div class="game-grid">
+      <a class="game-card" href="https://cacy-six.vercel.app/Nubby’s Number Factory.html">      Nubby’s Number Factory
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/DON’T YOU LECTURE ME.html">      DON’T YOU LECTURE ME
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Crazy Kitty 3D.html">      Crazy Kitty 3D
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Cluster Rush.html">      Cluster Rush
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Cuphead.html">      Cuphead
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Death Run 3D.html">      Death Run 3D
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Fireboy and Watergirl 2.html">      Fireboy &amp; Watergirl 2
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Friday Night Funkin.html">      Friday Night Funkin
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Jelly Drift.html">      Jelly Drift
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Jelly Mario.html">      Jelly Mario
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Line Rider.html">      Line Rider
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Pac Man World.html">      Pac Man World
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Please Dont Touch Anything.html">      Don’t Touch Anything
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Ragdoll Archers.html">      Ragdoll Archers
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Retro Bowl.html">      Retro Bowl
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Retro Bowl College.html">      Retro Bowl College
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Stickman Hook.html">      Stickman Hook
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Tattletail.html">      Tattletail
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/That’s Not My Neighbor.html">      That’s Not My Neighbor
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Tiny Fishing.html">      Tiny Fishing
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Tomb Of The Mask.html">      Tomb Of The Mask
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Vex 1.html">      Vex 1
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Vex 2.html">      Vex 2
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Vex 3.html">      Vex 3
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Vex 4.html">      Vex 4
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Vex 5.html">      Vex 5
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Vex 6.html">      Vex 6
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Vex 7.html">      Vex 7
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/Vex 8.html">      Vex 8
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/clocarinaoftime.html">      Ocarina of Time
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/clsupermario64ds.html">      Super Mario 64 DS
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/clsupermarioallstars.html">      Super Mario Allstars
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/clsupermarioworld2.html">      Super Mario World 2
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/clsuperscribblenauts.html">      Super Scribblenauts
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/cluncannycatgolf.html">      Uncanny Cat Golf
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/clunfairmarioworkquestion-mark.html">      Unfair Mario
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/clwariowarediy.html">      WarioWare DIY
+</a>
+      <a class="game-card" href="https://cacy-six.vercel.app/mariobuilder64.html">      Mario Builder 64
+</a>
+      <a class="game-card href="https://cacy-six.vercel.app/redball3.html">        Red Ball 3
+</a>
+    </div>
+    <footer>
+      I suck. --- Cuinja
+    </footer>
+  </body>
+</html>
